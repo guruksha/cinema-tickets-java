@@ -27,3 +27,5 @@ replay_pid*
 =======
 replay_pid*
 >>>>>>> 47d510c (Gitignore created)
+target/
+.DS_Store
