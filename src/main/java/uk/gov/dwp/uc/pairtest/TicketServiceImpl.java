@@ -71,9 +71,9 @@ public class TicketServiceImpl implements TicketService {
             if(adult==0 && (child>0 || infant>0))
                 throw new InvalidPurchaseException("Children and infants must be accompanied by an adult");
             if(infant>adult)
-                throw new InvalidPurchaseException("Each infant needs atleast one adult to attend the movies ");
+                throw new InvalidPurchaseException("Each infant needs at least one adult to attend the movies ");
             if(adult+child+infant>25)
-                throw new InvalidPurchaseException("Ticket quatity cannot be more than 25");
+                throw new InvalidPurchaseException("Ticket quantity cannot be more than 25");
 
         }
 
